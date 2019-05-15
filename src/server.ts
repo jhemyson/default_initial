@@ -1,4 +1,7 @@
-import app from './app'
+import App from './app'
+require('dotenv').config()
+
+const app = new App().express
 
 app.listen(3333)
 

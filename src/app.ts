@@ -1,9 +1,8 @@
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
-import routes from './app/routes/routes'
+import routes from './app/routes/'
 import database from './config/database'
-require('dotenv').config()
 
 class App {
   public express : express.Application
@@ -44,4 +43,4 @@ class App {
   }
 }
 
-export default new App().express
+export default App
